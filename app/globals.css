@@ -26,30 +26,34 @@ body {
 
 @layer base {
   /* Import fonts if needed */
-  @import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@600&family=Inter:wght@300;400;600;700&display=swap');
 
   /* H1 Main Text */
-  h1, .h1-main-text {
+  h1,
+  .h1-main-text {
     @apply text-7xl font-bold font-inter leading-[103px] text-center;
   }
 
   /* H2 Subheading for Hero Sections */
-  h2, .h2-hero-subheading {
+  h2,
+  .h2-hero-subheading {
     @apply text-7xl font-bold font-inter leading-[103px] text-left;
   }
 
   /* H3 Section Heading */
-  h3, .h3-section-heading {
-    @apply text-5xl font-semibold font-serif leading-normal;
+  h3,
+  .h3-section-heading {
+    @apply text-5xl font-semibold font-sourceSerif4 leading-normal;
   }
 
   /* H4 Heading Text */
-  h4, .h4-heading {
+  h4,
+  .h4-heading {
     @apply text-2xl font-semibold font-inter text-left;
   }
 
   /* H5 Sub Heading Light Text */
-  h5, .h5-subheading {
+  h5,
+  .h5-subheading {
     @apply text-2xl font-light font-inter tracking-tighter text-center;
   }
 
@@ -59,7 +63,8 @@ body {
   }
 
   /* Paragraphs Normal */
-  p, .paragraph-normal {
+  p,
+  .paragraph-normal {
     @apply text-base font-light font-inter text-left;
   }
 
@@ -83,4 +88,3 @@ body {
     @apply text-sm font-light font-inter text-left;
   }
 }
-

@@ -8,8 +8,9 @@
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 
-  /* Font Families: eg. --font-sans: var(--font-geist-sans); */
-
+  /* Font Families: */
+  --font-inter: var(--font-inter);
+  --font-sourceSerif4: var(--font-sourceSerif4);
   /* Color Palette:  eg. --color-primary: oklch(0.52 0.18 264); */
   --color-primary: #7e8d70;
   --color-primary-light: #f6f8f5;
