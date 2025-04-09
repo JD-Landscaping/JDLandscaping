@@ -14,11 +14,11 @@ declare namespace NodeJS {
 
     NEXT_PUBLIC_STRIPE_PUBLIC_KEY: string;
     SERVER_STRIPE_SECRET_KEY: string;
-    
+
     NEXT_PUBLIC_RECAPTCHA_SITE_KEY: string;
     SERVER_RECAPTCHA_SECRET_KEY: string;
 
-    SERVER_RESEND_API_KEY: string; 
+    SERVER_RESEND_API_KEY: string;
     SERVER_RESEND_FROM_EMAIL: string;
     SERVER_RESEND_FROM_NAME: string;
     SERVER_RESEND_AUDIENCE_ID: string;

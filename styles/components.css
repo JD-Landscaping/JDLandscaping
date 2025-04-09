@@ -35,20 +35,28 @@
 
   /* Card component */
   .basic-card {
-    @apply bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition;
+    @apply p-6 rounded-sm shadow-md bg-white hover:shadow-lg transition;
   }
 
-  .testimonial-card {
-    @apply bg-primary-light rounded-lg shadow-md p-6;
+  .testimonial-card-even {
+    @apply p-6 rounded-lg bg-primary-light;
   }
 
-  .testimonial-card-focused {
-    @apply bg-primary rounded-lg shadow-md p-6;
+  .testimonial-card-odd {
+    @apply p-6 rounded-lg bg-primary text-accent;
   }
 
   /* Button component */
   .btn-primary {
-    @apply px-5 md:px-6 py-2 md:py-3 bg-primary text-accent focus:outline-none hover:scale-105 transition;
+    @apply px-5 md:px-6 py-2 md:py-3 rounded-md bg-primary text-accent focus:outline-none hover:scale-105 transition;
+  }
+
+  .btn-secondary {
+    @apply px-5 md:px-6 py-2 md:py-3 rounded-md bg-secondary text-accent focus:outline-none hover:scale-105 transition;
+  }
+
+  .counter {
+    @apply text-primary text-5xl font-inter;
   }
 
   .input-field {
