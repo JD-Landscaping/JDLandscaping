@@ -1,13 +1,25 @@
 @import "tailwindcss";
 
 @layer utilities {
-    /* Text balance */
-    .text-balance {
-      text-wrap: balance;
-    }
-    
-    /* Full bleed */
-    .full-bleed {
-      @apply w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw];
-    }
+  /* Import fonts if needed */
+  @import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@600&family=Inter:wght@300;400;600;700&display=swap");
+
+  /* Font family utilities */
+  .font-inter {
+    font-family: "Inter", sans-serif;
+  }
+
+  .font-serif {
+    font-family: "Source Serif Pro", serif;
+  }
+
+  /* Text balance */
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  /* Full bleed */
+  .full-bleed {
+    @apply w-screen relative left-1/2 right-1/2 -ml-[50vw] -mr-[50vw];
+  }
 }

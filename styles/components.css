@@ -2,13 +2,56 @@
 
 /* If make modifications need to rerun the app */
 @layer components {
-    /* Card component */
-    .card {
-      @apply p-20 bg-green-300;
-    }
-    
-    /* Button component */
-    .btn-primary {
-      @apply px-4 py-2 bg-primary;
-    }
+  /* Root Layout */
+  .root-layout {
+    @apply flex flex-col min-h-screen bg-background text-foreground;
+  }
+
+  /* Generic Container Component */
+  .container {
+    @apply container mx-auto px-4 sm:px-6 md:px-8 lg:p-16;
+  }
+
+  /* Section Wrapper Container */
+  .section {
+    @apply py-8 md:py-12 lg:py-16;
+  }
+
+  .basic-grid {
+    @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8;
+  }
+
+  .content-sidebar-layout-container {
+    @apply grid grid-cols-1 lg:grid-cols-12 gap-8;
+  }
+
+  .content-sidebar-content-container {
+    @apply lg:col-span-8;
+  }
+
+  .content-sidebar-sidebar-container {
+    @apply lg:col-span-4;
+  }
+
+  /* Card component */
+  .basic-card {
+    @apply bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition;
+  }
+
+  .testimonial-card {
+    @apply bg-primary-light rounded-lg shadow-md p-6;
+  }
+
+  .testimonial-card-focused {
+    @apply bg-primary rounded-lg shadow-md p-6;
+  }
+
+  /* Button component */
+  .btn-primary {
+    @apply px-5 md:px-6 py-2 md:py-3 bg-primary text-accent focus:outline-none hover:scale-105 transition;
+  }
+
+  .input-field {
+    @apply w-full px-4 py-2 border border-gray-border rounded-lg focus:ring-2 focus:ring-primary focus:border-primary;
+  }
 }
