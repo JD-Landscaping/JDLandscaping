@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Inter, Source_Serif_4 } from "next/font/google";
 import "./globals.css";
+import Navbar from "@/components/layout/Navbar";
+import Footer from "@/components/layout/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -19,7 +21,7 @@ const inter = Inter({
 });
 
 const sourceSerif4 = Source_Serif_4({
-  variable: "--font-source_serif_4",
+  variable: "--font-source-serif-4",
   weight: ["200", "300", "400", "500", "600", "700", "800", "900"],
   subsets: ["latin"],
 });
@@ -39,7 +41,9 @@ export default function RootLayout({
       <body
         className={`root-layout ${geistSans.variable} ${geistMono.variable} ${inter.variable} ${sourceSerif4.variable} antialiased`}
       >
-        {children}
+        <Navbar />
+        <main className='flex-grow'>{children}</main>
+        <Footer />
       </body>
     </html>
   );

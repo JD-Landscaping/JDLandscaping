@@ -1,6 +1,7 @@
 import Link from "next/link";
 
 interface CardProps {
+  children: React.ReactNode;
   primary?: boolean;
   even?: boolean;
   url?: string;
@@ -8,6 +9,7 @@ interface CardProps {
 }
 
 export default function Card({
+  children,
   primary = true,
   even = true,
   url = "",
@@ -17,8 +19,17 @@ export default function Card({
   const mode2 = primary ? "basic-card" : mode1;
 
   return (
-    <div className={`${mode2}`}>
-      <Link href={url}>Card</Link>
+    <div className={`${mode2} text-center`}>
+      {url ? (
+        <Link
+          href={url}
+          className='group'
+        >
+          {children}
+        </Link>
+      ) : (
+        <div>{children}</div>
+      )}
     </div>
   );
 }

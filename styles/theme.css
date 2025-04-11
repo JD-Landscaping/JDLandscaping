@@ -10,7 +10,7 @@
 
   /* Font Families: */
   --font-inter: var(--font-inter);
-  --font-sourceSerif4: var(--font-sourceSerif4);
+  --font-sourceSerif4: var(--font-source-serif-4);
 
   /* Color Palette:  eg. --color-primary: oklch(0.52 0.18 264); */
   --color-primary: #7e8d70;

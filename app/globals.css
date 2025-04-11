@@ -9,12 +9,12 @@
 }
 
 /* TODO: Setup Dark Color Scheme */
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
     --foreground: #ffffff;
   }
-}
+} */
 
 body {
   background: var(--background);
@@ -31,42 +31,42 @@ body {
   /* H1 Main Text */
   h1,
   .h1-main-text {
-    @apply text-7xl font-bold font-inter leading-[103px] text-center;
+    @apply mb-10 text-5xl sm:text-6xl lg:text-7xl font-bold font-inter leading-20 lg:leading-[103px] text-center;
   }
 
   /* H2 Subheading for Hero Sections */
   h2,
   .h2-hero-subheading {
-    @apply text-7xl font-bold font-inter leading-[103px] text-left;
+    @apply text-4xl sm:text-5xl lg:text-6xl font-bold font-inter leading-16 text-left;
   }
 
   /* H3 Section Heading */
   h3,
   .h3-section-heading {
-    @apply text-5xl font-semibold font-sourceSerif4 leading-normal;
+    @apply mb-10 text-3xl md:text-5xl font-semibold font-sourceSerif4 leading-normal;
   }
 
   /* H4 Heading Text */
   h4,
   .h4-heading {
-    @apply text-2xl font-semibold font-inter text-left;
+    @apply mb-4 text-base md:text-lg font-semibold font-inter text-left;
   }
 
   /* H5 Sub Heading Light Text */
   h5,
   .h5-subheading {
-    @apply text-2xl font-light font-inter tracking-tighter text-center;
+    @apply mb-4 text-xl sm:text-2xl font-extralight tracking-tighter text-center;
   }
 
   /* Button Text */
   .button-text {
-    @apply text-xl font-semibold font-inter text-center;
+    @apply text-base md:text-xl font-semibold font-inter text-center;
   }
 
   /* Paragraphs Normal */
   p,
   .paragraph-normal {
-    @apply text-base font-light font-inter text-left;
+    @apply text-sm font-light font-inter text-left;
   }
 
   /* Paragraphs Spaced Out */
@@ -81,11 +81,11 @@ body {
 
   /* Paragraph Bolded Link Text */
   .paragraph-link {
-    @apply text-base font-semibold font-inter text-left underline;
+    @apply text-accent text-lg font-semibold font-inter text-left underline;
   }
 
   /* Subtitle Text */
   .subtitle-text {
-    @apply text-sm font-light font-inter text-left;
+    @apply text-sm font-light font-inter text-center text-nowrap text-primary;
   }
 }
