@@ -12,15 +12,15 @@ export default function AboutSection() {
         <div className='flex flex-col xl:flex-row justify-between text-center xl:text-left'>
           <Container>
             <h3 className=''>
-              I'm Jorge, a landscaper based in Minnesota, US.
+              I&apos;m Jorge, a landscaper based in Minnesota, US.
             </h3>
 
             <p className='paragraph-spaced pb-10 text-center xl:text-left'>
               J&D Landscaping provides reliable and professional landscaping
               services to keep your outdoor space looking its best. From lawn
               care to hardscaping, we focus on quality work and practical
-              solutions that fit your needs. Whether it’s routine maintenance or
-              a new project, we’re here to help.
+              solutions that fit your needs. Whether it&apos;s routine
+              maintenance or a new project, we&apos;re here to help.
             </p>
 
             <Button label='Find Out More' />

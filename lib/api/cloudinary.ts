@@ -95,7 +95,7 @@ const cld = new Cloudinary({
 });
 
 export const getServiceByID = (id: string): ServiceBase | undefined => {
-  return services.find((service: any) => service.id === id);
+  return services.find((service) => service.id === id);
 };
 
 // Get cldnry img URL data for specific path

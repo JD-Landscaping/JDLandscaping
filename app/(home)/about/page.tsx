@@ -2,7 +2,6 @@ import AboutTestimonialsSection from "@/components/about/AboutTestimonialsSectio
 import StorySection from "@/components/about/StorySection";
 import ValuesSection from "@/components/about/ValuesSection";
 import HeroContainer from "@/components/layout/HeroContainer";
-import Section from "@/components/layout/Section";
 import Cta from "@/components/shared/Cta";
 
 export default function AboutPage() {

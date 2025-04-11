@@ -1,6 +1,5 @@
 import Image from "next/image";
 import logo from "@/public/logo.webp";
-import { testimonials } from "@/lib/data";
 import Section from "@/components/layout/Section";
 import Container from "@/components/layout/Container";
 import ReviewEncouragementSection from "@/components/shared/ReviewEncouragementSection";

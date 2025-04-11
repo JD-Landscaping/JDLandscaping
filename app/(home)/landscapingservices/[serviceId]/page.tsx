@@ -1,5 +1,4 @@
 import HeroContainer from "@/components/layout/HeroContainer";
-import Image from "next/image";
 import Cta from "@/components/shared/Cta";
 import Gallery from "@/components/shared/gallery/Gallery";
 import {

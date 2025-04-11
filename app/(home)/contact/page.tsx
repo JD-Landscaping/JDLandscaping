@@ -1,6 +1,5 @@
 import ContactSection from "@/components/home/ContactSection";
 import HeroContainer from "@/components/layout/HeroContainer";
-import Section from "@/components/layout/Section";
 
 export default function ContactPage() {
   return (
