@@ -2,9 +2,13 @@ import Link from "next/link";
 import Image from "next/image";
 import Button from "@/components/ui/Button";
 
-export default function Navbar() {
+interface NavbarProps {
+  customClass?: string;
+}
+
+export default function Navbar({ customClass }: NavbarProps) {
   return (
-    <div className='hidden md:flex flex-col bg-white text-[#333333]  '>
+    <div className={`${customClass} flex-col bg-white text-[#333333]`}>
       {/* Navbar */}
       <nav className='fixed top-0 left-0 right-0 z-50 bg-white shadow-md'>
         <div className='container mx-auto px-4'>
@@ -67,12 +71,6 @@ export default function Navbar() {
                   Services
                 </Link>
                 <div>
-                  <Link
-                    href='/contact'
-                    className='bg-prima text-white px-4 py-2 rounded-lg hover:bg-[#617153] transition'
-                  >
-                    Contact
-                  </Link>
                   <Button
                     label='Contact'
                     href='/contact'

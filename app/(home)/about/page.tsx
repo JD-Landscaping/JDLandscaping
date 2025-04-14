@@ -1,6 +1,6 @@
-import AboutTestimonialsSection from "@/components/about/AboutTestimonialsSection";
 import StorySection from "@/components/about/StorySection";
 import ValuesSection from "@/components/about/ValuesSection";
+import TestimonialsSection from "@/components/home/TestimonialsSection";
 import HeroContainer from "@/components/layout/HeroContainer";
 import Cta from "@/components/shared/Cta";
 
@@ -14,7 +14,7 @@ export default function AboutPage() {
       />
       <ValuesSection />
       <StorySection />
-      <AboutTestimonialsSection />
+      <TestimonialsSection showLogo={false} />
       <Cta />
     </div>
   );

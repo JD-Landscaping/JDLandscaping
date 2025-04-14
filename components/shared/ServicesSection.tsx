@@ -54,7 +54,7 @@ export default async function ServicesSection({
           <div className='flex flex-col text-nowrap lg:flex-row justify-center items-center gap-3 lg:gap-4 px-2'>
             <Button
               label='See All Services'
-              href='/services'
+              href='/landscapingservices'
               customClass='px-30'
             />
             <Button

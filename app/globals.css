@@ -43,7 +43,7 @@ body {
   /* H3 Section Heading */
   h3,
   .h3-section-heading {
-    @apply mb-10 text-3xl md:text-5xl font-semibold font-sourceSerif4 leading-normal;
+    @apply mb-10 text-2xl md:text-5xl font-semibold font-sourceSerif4 leading-normal;
   }
 
   /* H4 Heading Text */
@@ -55,12 +55,12 @@ body {
   /* H5 Sub Heading Light Text */
   h5,
   .h5-subheading {
-    @apply mb-4 text-xl sm:text-2xl font-extralight tracking-tighter text-center;
+    @apply mb-4 text-base sm:text-2xl font-extralight tracking-tighter text-center;
   }
 
   /* Button Text */
   .button-text {
-    @apply text-base md:text-xl font-semibold font-inter text-center;
+    @apply text-sm sm:text-base md:text-xl font-semibold font-inter text-center;
   }
 
   /* Paragraphs Normal */
@@ -71,7 +71,7 @@ body {
 
   /* Paragraphs Spaced Out */
   .paragraph-spaced {
-    @apply text-base font-light font-inter leading-10 text-left;
+    @apply text-sm font-light font-inter leading-8 md:leading-10 text-left;
   }
 
   /* Paragraph text For centered content */

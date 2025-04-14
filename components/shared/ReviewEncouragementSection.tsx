@@ -6,7 +6,7 @@ export default function ReviewEncouragementSection() {
   return (
     <div className='smaller-section'>
       <Container>
-        <h4 className='text-center text-4xl font-sourceSerif4'>
+        <h4 className='text-center text-lg md:text-4xl font-sourceSerif4'>
           Help Us Grow - Share Your Experience!
         </h4>
         <h5>

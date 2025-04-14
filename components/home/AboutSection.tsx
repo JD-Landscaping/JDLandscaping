@@ -23,7 +23,10 @@ export default function AboutSection() {
               maintenance or a new project, we&apos;re here to help.
             </p>
 
-            <Button label='Find Out More' />
+            <Button
+              label='Find Out More'
+              href='/about'
+            />
           </Container>
 
           <Section>

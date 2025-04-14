@@ -6,6 +6,9 @@ import {
   FaFacebook,
   FaGoogle,
   FaCanadianMapleLeaf,
+  FaHouse,
+  FaLightbulb,
+  FaToolbox,
   // FaLocationDot,
   // FaClock,
 } from "react-icons/fa6";
@@ -16,15 +19,23 @@ import { LuHeartHandshake } from "react-icons/lu";
 export const navLinks = [
   {
     name: "Home",
+    href: "/",
+    icon: FaHouse,
   },
   {
     name: "About",
+    href: "/about",
+    icon: FaLightbulb,
   },
   {
     name: "Services",
+    href: "/landscapingservices",
+    icon: FaToolbox,
   },
   {
     name: "Contact",
+    href: "contact",
+    icon: FaPhoneVolume,
   },
 ];
 

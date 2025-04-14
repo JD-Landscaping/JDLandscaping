@@ -34,6 +34,7 @@ export default async function HeroSection() {
               <Button
                 label='Get a Free Estimate'
                 primary
+                href='/contact'
               />
             </Section>
           </div>

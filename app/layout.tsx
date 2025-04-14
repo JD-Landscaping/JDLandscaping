@@ -3,6 +3,7 @@ import { Geist, Geist_Mono, Inter, Source_Serif_4 } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import MobileNavBar from "@/components/layout/MobileNavBar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -41,7 +42,8 @@ export default function RootLayout({
       <body
         className={`root-layout ${geistSans.variable} ${geistMono.variable} ${inter.variable} ${sourceSerif4.variable} antialiased`}
       >
-        <Navbar />
+        <Navbar customClass='hidden md:flex' />
+        <MobileNavBar customClass='md:hidden' />
         <main className='flex-grow'>{children}</main>
         <Footer />
       </body>

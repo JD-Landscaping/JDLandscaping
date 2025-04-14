@@ -9,7 +9,7 @@ export default function StorySection() {
         <div className='grid grid-cols-1 xl:grid-cols-5'>
           <div className='col-span-3'>
             <h3>The J&D Landscaping & Construction Journey</h3>
-            <p className='paragraph-spaced'>
+            <p className='text-center lg:text-start paragraph-spaced pr-10'>
               J&D Landscaping & Construction began with a simple passion for
               transforming outdoor spaces. Founded in [Year] by [Founder Names],
               we started as a small, family-run team with a shared love for
@@ -26,7 +26,7 @@ export default function StorySection() {
             </p>
           </div>
 
-          <div className='col-span-2 flex items-center justify-center'>
+          <div className='col-span-2 flex items-center justify-center pl-10'>
             <CustomImage
               src='about-hero'
               alt='family'
