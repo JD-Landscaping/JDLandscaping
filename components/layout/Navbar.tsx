@@ -42,8 +42,8 @@ export default function Navbar({ customClass }: NavbarProps) {
                 <Image
                   src='/logo.webp'
                   alt='J&D Landscaping & Construction Logo'
-                  width={120}
-                  height={120}
+                  width={70}
+                  height={70}
                   className='mb-2'
                 />
                 <div className='flex flex-col justify-center items-center text-center'>

@@ -6,7 +6,7 @@ export default function ServicesPage() {
   return (
     <div className='page-layout bg-primary-light'>
       <HeroContainer
-        imageUrl='about-hero'
+        imageUrl='services-hero'
         page='Services at'
         subheading=''
       />

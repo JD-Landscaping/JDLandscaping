@@ -5,7 +5,7 @@ export default function ContactPage() {
   return (
     <div className='page-layout bg-primary md:bg-accent'>
       <HeroContainer
-        imageUrl={"about-hero"}
+        imageUrl='contact-hero'
         page='Contact'
         subheading='Family-Owned, Quality-Driven – Excited for the opportunity to work with you.'
       />

@@ -73,7 +73,7 @@ export default async function ServicePage({
     <div className='bg-white'>
       {/* Hero Section */}
       <HeroContainer
-        imageUrl='about-hero'
+        imageUrl={service.mainImageId}
         page={service.name}
         subheading={service.description}
       />

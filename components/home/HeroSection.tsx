@@ -5,9 +5,9 @@ import Button from "@/components/ui/Button";
 
 export default async function HeroSection() {
   const heroImage = await getCloudinaryImageData(
-    "about-hero",
+    "paver-patios-main",
     1920,
-    800,
+    1080,
     "hero-page"
   );
   return (

@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import { services } from "@/lib/data";
 import InputField from "@/components/ui/InputField";
 import Button from "../ui/Button";
 
@@ -23,17 +22,17 @@ export default function ContactForm() {
     setFormData((prevData) => ({ ...prevData, [name]: value }));
   };
 
-  const handleCheckboxChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const { value, checked } = e.target;
+  // const handleCheckboxChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  //   const { value, checked } = e.target;
 
-    setFormData((prevData) => {
-      const newServices = checked
-        ? [...prevData.services, value]
-        : prevData.services.filter((service) => service !== value);
+  //   setFormData((prevData) => {
+  //     const newServices = checked
+  //       ? [...prevData.services, value]
+  //       : prevData.services.filter((service) => service !== value);
 
-      return { ...prevData, services: newServices };
-    });
-  };
+  //     return { ...prevData, services: newServices };
+  //   });
+  // };
 
   return (
     <form className='bg-accent p-4 rounded-xl flex flex-col gap-2 md:gap-3'>
@@ -90,11 +89,11 @@ export default function ContactForm() {
           onChange={handleChange}
           className='input-field'
           placeholder='message'
-          rows={7}
+          rows={15}
           required
         />
       </div>
-      <div>
+      {/* <div>
         <label
           htmlFor='services'
           className='subtitle-text mx-2'
@@ -118,7 +117,7 @@ export default function ContactForm() {
             </label>
           ))}
         </div>
-      </div>
+      </div> */}
       <div className='flex justify-center items-center'>
         <Button
           label='Send message'

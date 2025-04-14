@@ -26,7 +26,7 @@ export default function StorySection() {
             </p>
           </div>
 
-          <div className='col-span-2 flex items-center justify-center pl-10'>
+          <div className='col-span-2 flex items-center justify-center xl:pl-10'>
             <CustomImage
               src='about-hero'
               alt='family'

@@ -9,8 +9,8 @@ export default function AboutSection() {
   return (
     <Section>
       <Container>
-        <div className='flex flex-col xl:flex-row justify-between text-center xl:text-left'>
-          <Container>
+        <div className='flex flex-col xl:flex-row justify-between text-center lg:text-left'>
+          <Container customClass='md:items-start'>
             <h3 className=''>
               I&apos;m Jorge, a landscaper based in Minnesota, US.
             </h3>
