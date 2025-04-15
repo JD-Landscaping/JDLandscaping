@@ -11,8 +11,10 @@ export default function ContactForm() {
     email: "",
     phone: "",
     message: "",
-    services: [] as string[],
+    // services: [] as string[],
   });
+
+  const [submitted, setSubmitted] = useState(false);
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -34,8 +36,46 @@ export default function ContactForm() {
   //   });
   // };
 
-  return (
-    <form className='bg-accent p-4 rounded-xl flex flex-col gap-2 md:gap-3'>
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    try {
+      const res = await fetch("/api/send-email", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData), // Send the full formData
+      });
+
+      if (res.ok) {
+        setSubmitted(true);
+        setFormData({
+          firstname: "",
+          lastname: "",
+          email: "",
+          phone: "",
+          message: "",
+        });
+      } else {
+        alert("Something went wrong. Please try again.");
+      }
+    } catch (error) {
+      console.error("Submission error:", error);
+      alert("Failed to send. Try again later.");
+    }
+  };
+
+  return submitted ? (
+    <div className='text-center p-10 bg-accent rounded-xl'>
+      <h3 className='text-2xl font-semibold text-primary'>Thank you!</h3>
+      <p className='text-lg mt-2'>
+        Your message has been sent successfully. We’ll be in touch soon.
+      </p>
+    </div>
+  ) : (
+    <form
+      className='bg-accent p-4 rounded-xl flex flex-col gap-2 md:gap-3'
+      onSubmit={handleSubmit}
+    >
       <div className='flex flex-col md:flex-row gap-1 md:gap-3'>
         <InputField
           label='First Name'
@@ -120,6 +160,7 @@ export default function ContactForm() {
       </div> */}
       <div className='flex justify-center items-center'>
         <Button
+          type='submit'
           label='Send message'
           primary={false}
           customClass='px-20'

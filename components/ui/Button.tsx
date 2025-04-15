@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-interface ButtonProps {
+interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   label: string;
   href?: string;
   primary?: boolean;
@@ -14,9 +14,10 @@ export default function Button({
   primary = true,
   onClick,
   customClass,
+  ...props
 }: Readonly<ButtonProps>) {
   const mode = primary ? "btn-primary" : "btn-secondary";
-  return (
+  return href ? (
     <Link
       className={`${mode} ${customClass}`}
       href={href}
@@ -24,5 +25,13 @@ export default function Button({
     >
       {label}
     </Link>
+  ) : (
+    <button
+      type='button'
+      className={`${mode} ${customClass}`}
+      {...props}
+    >
+      {label}
+    </button>
   );
 }

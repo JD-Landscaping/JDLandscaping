@@ -18,6 +18,7 @@ const nextConfig: NextConfig = {
       process.env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME,
     NEXT_PUBLIC_CLOUDINARY_API_KEY: process.env.NEXT_PUBLIC_CLOUDINARY_API_KEY,
     CLOUDINARY_API_SECRET: process.env.CLOUDINARY_API_SECRET,
+    SERVER_TO_EMAIL: process.env.SERVER_TO_EMAIL,
   },
 };
 

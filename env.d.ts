@@ -20,7 +20,9 @@ declare namespace NodeJS {
 
     SERVER_RESEND_API_KEY: string;
     SERVER_RESEND_FROM_EMAIL: string;
+
     SERVER_RESEND_FROM_NAME: string;
+    SERVER_TO_EMAIL: string;
     SERVER_RESEND_AUDIENCE_ID: string;
 
     SERVER_SENDGRID_API_KEY: string;

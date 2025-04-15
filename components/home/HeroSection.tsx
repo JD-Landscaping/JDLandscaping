@@ -30,13 +30,13 @@ export default async function HeroSection() {
               We&apos;ve been creating beautiful outdoor spaces for over 20
               years with a focus on sustainability and quality.
             </h5>
-            <Section>
-              <Button
-                label='Get a Free Estimate'
-                primary
-                href='/contact'
-              />
-            </Section>
+
+            <Button
+              label='Get a Free Estimate'
+              primary
+              href='/contact'
+              customClass='my-10'
+            />
           </div>
         </div>
       </div>

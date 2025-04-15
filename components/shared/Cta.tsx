@@ -13,14 +13,13 @@ export default function Cta() {
           Free, no-obligation estimates—book yours today before our spring
           schedule fills up!
         </h4>
-        <div>
-          <Button
-            label='Get Free Quote'
-            href='/contact'
-            primary={false}
-            customClass='px-20'
-          />
-        </div>
+
+        <Button
+          label='Get Free Quote'
+          href='/contact'
+          primary={false}
+          customClass='px-20'
+        />
       </Container>
     </Section>
   );
