@@ -8,21 +8,20 @@ export default function StorySection() {
       <Container>
         <div className='grid grid-cols-1 xl:grid-cols-5'>
           <div className='col-span-3'>
-            <h3>The J&D Landscaping & Construction Journey</h3>
-            <p className='text-center lg:text-start paragraph-spaced pr-10'>
-              J&D Landscaping & Construction began with a simple passion for
-              transforming outdoor spaces. Founded in [Year] by [Founder Names],
-              we started as a small, family-run team with a shared love for
-              craftsmanship and the outdoors. What began with a single lawnmower
-              and a pickup truck has grown into a trusted [Your Location]
-              business, serving hundreds of homeowners with pride. Over the
-              years, we’ve honed our skills in both landscaping and
-              construction, combining creative design with durable, high-quality
-              work. But no matter how much we’ve grown, we’ve never lost sight
-              of what matters most—treating every client’s property like our
-              own. When you work with us, you’re not just hiring landscapers;
-              you’re partnering with a team that genuinely cares about bringing
-              your vision to life.
+            <h3 className='text-center xl:text-start'>
+              The J&D Landscaping & Construction Journey
+            </h3>
+            <p className='text-center xl:text-start paragraph-spaced pb-10 xl:pb-0 xl:pr-10'>
+              J&D Landscaping & Construction was founded by Jorge over eight
+              years ago, building on his extensive 18-year career in the
+              landscaping industry. With roots deeply planted in hands-on
+              experience and technical knowledge, Jorge established the company
+              to deliver exceptional outdoor transformations and construction
+              services to the community. His commitment to quality craftsmanship
+              and attention to detail are reflected in every project, from
+              complete landscape redesigns to custom construction work. Today,
+              J&D continues to grow while maintaining the same dedication to
+              excellence that has been our foundation since the beginning.
             </p>
           </div>
 
