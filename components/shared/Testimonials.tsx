@@ -1,5 +1,4 @@
 import { testimonials } from "@/lib/data";
-import BasicGrid from "@/components/layout/BasicGrid";
 import Card from "@/components/ui/Card";
 
 export default function Testimonials() {
