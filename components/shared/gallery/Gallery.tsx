@@ -55,7 +55,7 @@ export default function Gallery({ gallery }: Readonly<GalleryProps>) {
 }
 
 function renderNextImage(
-  { alt = "", title, sizes }: RenderImageProps,
+  { alt = "", title }: RenderImageProps,
   { photo, width, height }: RenderImageContext
 ) {
   return (
@@ -73,7 +73,11 @@ function renderNextImage(
         src={photo.src}
         alt={alt}
         title={title}
-        sizes={sizes}
+        sizes={`
+        (min-width: 1024px) 25vw, 
+        (min-width: 768px) 33vw, 
+        100vw
+      `}
         placeholder={"blurDataURL" in photo ? "blur" : undefined}
         style={{ objectFit: "cover" }} // Ensure images cover their container
         className='transition-transform duration-300 hover:scale-105' // Optional: add hover effect
