@@ -100,10 +100,10 @@ export default async function ServicePage({
         </Link>
 
         <div className='lg:col-span-9'>
-          <div className='bg-white rounded-xl'>
-            <h3 className='mb-6'>About This Service</h3>
-            <div className='prose prose-lg max-w-none text-gray-600'>
-              <p>{service.fullDescription}</p>
+          <div className='bg-white rounded-xl text-center'>
+            <h3 className=' mb-6'>About This Service</h3>
+            <div className=' prose prose-lg max-w-none text-gray-600'>
+              <p className='text-center'>{service.fullDescription}</p>
             </div>
 
             <div className='mt-16'>
