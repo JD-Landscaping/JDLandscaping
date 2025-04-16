@@ -1,11 +1,10 @@
 import { testimonials } from "@/lib/data";
-import BasicGrid from "@/components/layout/BasicGrid";
 import Card from "@/components/ui/Card";
 
 export default function Testimonials() {
   return (
     <div className='smaller-section'>
-      <BasicGrid>
+      <div className='grid grid-cols-1 lg:grid-cols-3 gap-6 md:gap-8'>
         {testimonials.slice(0, 3).map((testimonial, index) => (
           <Card
             key={testimonial.clientName}
@@ -18,7 +17,7 @@ export default function Testimonials() {
             </p>
           </Card>
         ))}
-      </BasicGrid>
+      </div>
     </div>
   );
 }

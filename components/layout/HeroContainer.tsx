@@ -5,19 +5,19 @@ import { getCloudinaryImageData } from "@/lib/api/cloudinary";
 interface HeroContainerProps {
   imageUrl: string;
   page: string;
-  subheading: string;
+  subheading?: string;
 }
 
 export default async function HeroContainer({
   imageUrl,
   page,
-  subheading,
+  subheading = "",
 }: Readonly<HeroContainerProps>) {
   const HeroImage = await getCloudinaryImageData(imageUrl);
 
   return (
     <Section>
-      <div className='relative w-full h-[900px]'>
+      <div className='relative w-full h-[780px] lg:h-[900px]'>
         <Image
           src={HeroImage.src}
           alt={page}
@@ -31,7 +31,7 @@ export default async function HeroContainer({
             <h3 className='text-accent font-inter'>{page}</h3>
             <h2 className='text-accent'>J&D Landscaping</h2>
             <h2 className='text-accent mb-5'>& Construction</h2>
-            <p className='text-lg text-accent'>{subheading}</p>
+            <p className='md:text-lg text-accent'>{subheading}</p>
           </div>
         </div>
       </div>
