@@ -12,10 +12,10 @@ export default function Navbar({ customClass }: NavbarProps) {
       {/* Navbar */}
       <nav className='fixed top-0 left-0 right-0 z-50 bg-white shadow-md'>
         <div className='container mx-auto px-4'>
-          <div className='container mx-auto flex justify-center items-center'>
+          <div className='container text-sm mx-auto flex justify-center items-center'>
             {/* First Links */}
             <div className='flex flex-col gap-5 container'>
-              <div className='flex justify-evenly items-center mb-2'>
+              <div className='flex justify-evenly items-center'>
                 <Link
                   href='/'
                   className='hover:text-[#7E8D70] transition text-[#333333]'
@@ -34,7 +34,7 @@ export default function Navbar({ customClass }: NavbarProps) {
             </div>
 
             {/* Logo and Company Name */}
-            <div className='flex font-cormorant-garamond tracking-[0.3em] text-xl md:text-2xl font-light justify-center py-4 px-5'>
+            <div className='flex justify-center pt-2 px-10'>
               <Link
                 href='/'
                 className='inline-flex flex-col items-center'
@@ -42,28 +42,24 @@ export default function Navbar({ customClass }: NavbarProps) {
                 <Image
                   src='/logo.webp'
                   alt='J&D Landscaping & Construction Logo'
-                  width={70}
-                  height={70}
-                  className='mb-2'
+                  width={60}
+                  height={60}
+                  className='mb-3'
                 />
                 <div className='flex flex-col justify-center items-center text-center'>
-                  <h4 className='text-nowrap font-normal text-gray-700 font-sourceSerif4 leading-2 tracking-widest'>
+                  <h4 className='text-nowrap text-xs font-normal text-gray-700 font-sourceSerif4 leading-[0.05rem] tracking-wider'>
                     Landscaping
                   </h4>
-                  <h4 className='text-nowrap font-normal text-gray-700 font-sourceSerif4 leading-2 tracking-widest'>
+                  <h4 className='text-nowrap text-xs font-normal text-gray-700 font-sourceSerif4 leading-[0.05rem] tracking-wider'>
                     & Construction
                   </h4>
-
-                  <p className='-tracking-normal text-sm text-secondary text-nowrap'>
-                    Transforming Outdoor Spaces
-                  </p>
                 </div>
               </Link>
             </div>
 
             {/* Second Links */}
             <div className='flex flex-col gap-5  container'>
-              <div className='flex justify-evenly items-center mb-2'>
+              <div className='flex justify-evenly items-center'>
                 <Link
                   href='/landscapingservices'
                   className='hover:text-[#7E8D70] transition text-[#333333]'
