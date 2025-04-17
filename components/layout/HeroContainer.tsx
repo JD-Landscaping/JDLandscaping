@@ -17,7 +17,7 @@ export default async function HeroContainer({
 
   return (
     <Section>
-      <div className='relative w-full h-[780px] lg:h-[900px]'>
+      <div className='relative w-full h-screen'>
         <Image
           src={HeroImage.src}
           alt={page}
