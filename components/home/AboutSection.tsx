@@ -10,8 +10,8 @@ export default function AboutSection() {
     <Section>
       <Container>
         <div className='flex flex-col xl:flex-row justify-between text-center lg:text-left'>
-          <Container customClass='md:items-start'>
-            <h3 className=''>
+          <Container customClass='item-center xl:items-start'>
+            <h3 className='xl:text-start'>
               I&apos;m Jorge, a landscaper based in Minnesota, US.
             </h3>
 

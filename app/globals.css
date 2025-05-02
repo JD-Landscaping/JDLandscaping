@@ -43,7 +43,7 @@ body {
   /* H3 Section Heading */
   h3,
   .h3-section-heading {
-    @apply mb-10 text-2xl md:text-5xl font-semibold font-sourceSerif4 leading-normal;
+    @apply mb-10 text-center text-2xl md:text-3xl lg:text-5xl font-semibold font-sourceSerif4 leading-normal;
   }
 
   /* H4 Heading Text */
