@@ -12,6 +12,8 @@ export default function AboutPage() {
         page='About'
         subheading='Family-Owned, Quality-Driven – Serving Minnesota with Pride Since 2015.'
       />
+
+      {/* Main Content */}
       <ValuesSection />
       <StorySection />
       <TestimonialsSection showLogo={false} />

@@ -1,7 +1,7 @@
 // components/ui/Counter.ts
 "use client";
 import CountUp from "react-countup";
-import useIntersection from "@/lib/hooks/use-intersection";
+import { useIntersection } from "@/hooks/useIntersection";
 
 interface CounterProps {
   end: number;

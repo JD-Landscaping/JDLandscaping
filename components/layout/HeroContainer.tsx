@@ -25,6 +25,7 @@ export default async function HeroContainer({
           fill
           className='object-cover'
         />
+
         {/* Overlay & Content */}
         <div className='absolute inset-0 bg-overlay'>
           <div className='container mx-auto px-4 h-full flex flex-col justify-center items-start text-start'>

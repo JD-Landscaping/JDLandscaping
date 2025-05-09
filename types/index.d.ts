@@ -70,3 +70,11 @@ export interface CloudinaryApiResponse {
   rate_limit_remaining?: number;
   rate_limit_reset_at?: string;
 }
+
+export interface ContactFormData {
+  firstname: string;
+  lastname: string;
+  email: string;
+  phone: string;
+  message: string;
+}

@@ -9,7 +9,6 @@ interface NavbarProps {
 export default function Navbar({ customClass }: NavbarProps) {
   return (
     <div className={`${customClass} flex-col bg-white text-[#333333]`}>
-      {/* Navbar */}
       <nav className='fixed top-0 left-0 right-0 z-50 bg-white shadow-md'>
         <div className='container mx-auto px-4'>
           <div className='container text-sm mx-auto flex justify-center items-center'>
@@ -29,7 +28,7 @@ export default function Navbar({ customClass }: NavbarProps) {
                   About
                 </Link>
               </div>
-              {/* Dark Line */}
+
               <div className='h-[1px] bg-gray-border w-full'></div>
             </div>
 
@@ -73,7 +72,6 @@ export default function Navbar({ customClass }: NavbarProps) {
                   />
                 </div>
               </div>
-              {/* Dark Line */}
               <div className='h-[1px] bg-gray-border w-full'></div>
             </div>
           </div>

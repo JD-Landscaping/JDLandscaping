@@ -29,6 +29,7 @@ export default function AboutSection() {
             />
           </Container>
 
+          {/* TODO: Extract to seperate component: Metrics.tsx */}
           <Section>
             <Container>
               <div className='grid gap-2 justify-center'>

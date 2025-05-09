@@ -1,36 +1,22 @@
 import Link from "next/link";
 import React from "react";
 import { contactInfo } from "@/lib/data";
+import { navLinks } from "@/lib/data";
 
 export default function Footer() {
   return (
     <footer className='bg-secondary text-accent py-12'>
       <div className='basic-grid w-full mx-auto px-4 text-center'>
         <div className='flex justify-center items-center space-x-6 mb-6'>
-          <Link
-            href='/'
-            className='hover:text-[#7E8D70] transition'
-          >
-            Home
-          </Link>
-          <Link
-            href='/about'
-            className='hover:text-[#7E8D70] transition'
-          >
-            About
-          </Link>
-          <Link
-            href='/landscapingservices'
-            className='hover:text-[#7E8D70] transition'
-          >
-            Services
-          </Link>
-          <Link
-            href='/contact'
-            className='hover:text-[#7E8D70] transition'
-          >
-            Contact
-          </Link>
+          {navLinks.map((link) => (
+            <Link
+              key={link.name}
+              href={link.href}
+              className='hover:text-[#7E8D70] transition'
+            >
+              {link.name}
+            </Link>
+          ))}
         </div>
 
         <Link

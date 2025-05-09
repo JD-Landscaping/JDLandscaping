@@ -71,7 +71,6 @@ export default async function ServicePage({
 
   return (
     <div className='bg-white'>
-      {/* Hero Section */}
       <HeroContainer
         imageUrl={service.mainImageId}
         page={service.name}
@@ -117,15 +116,14 @@ export default async function ServicePage({
         </div>
       </div>
 
-      {/* Related Services */}
+      {/* TODO: maybe Related Services */}
 
-      {/* Call to Action */}
+      {/* TODO: maybe Call to Action */}
       <Cta />
     </div>
   );
 }
 
-// Add metadata generation for SEO
 export async function generateMetadata({ params }: ServicePageProps) {
   const { serviceId } = await params;
   const service = await getServiceData(serviceId);

@@ -12,7 +12,6 @@ export default async function HeroSection() {
   );
   return (
     <Section>
-      {/* Relative container for the image */}
       <div className='relative w-full h-screen'>
         <Image
           src={heroImage}

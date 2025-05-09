@@ -34,7 +34,7 @@ export const navLinks = [
   },
   {
     name: "Contact",
-    href: "contact",
+    href: "/contact",
     icon: FaPhoneVolume,
   },
 ];
@@ -63,29 +63,26 @@ export const values = [
 // Target values for the metrics
 export const metrics = [
   {
-    metric: "Projects Comepleted",
-    target: 180,
-    duration: 2,
-  },
-  {
-    metric: "Customers Worked With",
-    target: 150,
-    duration: 2,
-  },
-  {
     metric: "Years of Experience",
-    target: 20,
+    target: 10,
     duration: 4,
+    suffix: "+",
+  },
+  {
+    metric: "Completed Projects",
+    target: 100,
+    duration: 4,
+    suffix: "+",
+  },
+  {
+    metric: "Client Satisfaction",
+    target: 100,
+    duration: 3,
+    suffix: "%",
   },
 ];
 
 export const contactInfo = [
-  // {
-  //   name: "Time",
-  //   content: "Monday - Friday: 7am - 3pm",
-  //   url: "",
-  //   icon: IoTime,
-  // },
   {
     name: "Email",
     content: "Landscaping.jdconstruction@gmail.com",
@@ -97,20 +94,6 @@ export const contactInfo = [
     content: "(612) 200-7243",
     url: "tel:6122007243",
     icon: FaPhoneVolume,
-  },
-];
-
-// Socials and contact data
-export const socials = [
-  {
-    name: "Facebook",
-    url: "https://www.facebook.com/profile.php?id=100064157432741",
-    icon: FaFacebookMessenger,
-  },
-  {
-    name: "Instagram",
-    url: "https://www.instagram.com/jandd_landscaping_and_construc/",
-    icon: RiInstagramFill,
   },
 ];
 
