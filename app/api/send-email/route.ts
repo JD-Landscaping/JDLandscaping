@@ -5,9 +5,6 @@ import { Resend } from "resend";
 const resend = new Resend(process.env.SERVER_RESEND_API_KEY);
 
 export async function POST(req: Request) {
-  const emailItem = contactInfo.find((item) => item.name === "Email");
-  if (!emailItem) throw new Error("Email not found in contactInfo");
-
   try {
     const { firstname, lastname, email, phone, message } = await req.json();
 
