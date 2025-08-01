@@ -1,6 +1,5 @@
-import { contactInfo } from "@/lib/data";
-import { NextResponse } from "next/server";
-import { Resend } from "resend";
+import { NextResponse } from 'next/server';
+import { Resend } from 'resend';
 
 const resend = new Resend(process.env.SERVER_RESEND_API_KEY);
 
